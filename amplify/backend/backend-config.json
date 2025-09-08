@@ -1,0 +1,76 @@
+{
+  "api": {
+    "api4af33d4c": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "awsconteste3308e42"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "awsconteste3308e42": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_awsconteste3308e42_dbHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "awsconteste3308e42"
+        }
+      ]
+    },
+    "AMPLIFY_function_awsconteste3308e42_dbName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "awsconteste3308e42"
+        }
+      ]
+    },
+    "AMPLIFY_function_awsconteste3308e42_dbPassword": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "awsconteste3308e42"
+        }
+      ]
+    },
+    "AMPLIFY_function_awsconteste3308e42_dbUser": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "awsconteste3308e42"
+        }
+      ]
+    },
+    "AMPLIFY_function_awsconteste3308e42_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "awsconteste3308e42"
+        }
+      ]
+    },
+    "AMPLIFY_function_awsconteste3308e42_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "awsconteste3308e42"
+        }
+      ]
+    }
+  }
+}

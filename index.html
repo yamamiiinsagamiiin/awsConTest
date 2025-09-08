@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RDS の値を表示</title>
   </head>
-  <html>
-    <body>
-      <h1>RDS の値を表示</h1>
-      <div id="rdsValue"></div>
+  <body>
+    <h1>RDS の値を表示</h1>
+    <div id="rdsValue"></div>
 
-      <script>
-        async function fetchValue() {
+    <script>
+      async function fetchValue() {
+        try {
           const res = await fetch(
-            "https://your-api-endpoint.amazonaws.com/prod/value"
+            "https://8y2i1f8sal.execute-api.ap-northeast-1.amazonaws.com/dev/items"
           );
           const data = await res.json();
           document.getElementById("rdsValue").innerText = data.value;
+        } catch (err) {
+          console.error(err);
+          document.getElementById("rdsValue").innerText = "取得エラー";
         }
-        fetchValue();
-      </script>
-    </body>
-  </html>
+      }
+      fetchValue();
+    </script>
+  </body>
 </html>

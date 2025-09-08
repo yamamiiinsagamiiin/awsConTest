@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awscontest-dev-80976-authRole",
+      "UnauthRoleArn": "arn:aws:iam::577272335493:role/amplify-awscontest-dev-80976-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::577272335493:role/amplify-awscontest-dev-80976-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-awscontest-dev-80976-deployment",
+      "UnauthRoleName": "amplify-awscontest-dev-80976-unauthRole",
+      "StackName": "amplify-awscontest-dev-80976",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:577272335493:stack/amplify-awscontest-dev-80976/77eef520-8d04-11f0-a864-0ed730278df3",
+      "AmplifyAppId": "d1vnw4hu1hqe7"
+    },
+    "categories": {
+      "function": {
+        "awsconteste3308e42": {
+          "dbHost": "yamasandb.clge86coqrkh.ap-northeast-1.rds.amazonaws.com",
+          "dbUser": "admin",
+          "dbPassword": "YamaCity1211",
+          "dbName": "test_db",
+          "deploymentBucketName": "amplify-awscontest-dev-80976-deployment",
+          "s3Key": "amplify-builds/awsconteste3308e42-796b566d4e38586e4871-build.zip"
+        }
+      },
+      "api": {
+        "api4af33d4c": {}
+      }
+    }
+  }
+}
