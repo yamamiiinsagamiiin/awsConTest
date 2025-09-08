@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>RDS の値を表示</h1>
+    <div id="rdsValue"></div>
+
+    <script>
+      async function fetchValue() {
+        const res = await fetch(
+          "https://your-api-endpoint.amazonaws.com/prod/value"
+        );
+        const data = await res.json();
+        document.getElementById("rdsValue").innerText = data.value;
+      }
+      fetchValue();
+    </script>
+  </body>
+</html>
