@@ -22,7 +22,10 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*", // 👈 追加
+      },
       body: JSON.stringify(rows[0] || {}),
     };
   } catch (err) {
@@ -30,7 +33,10 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 500,
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*", // 👈 追加
+      },
       body: JSON.stringify({ error: err.message }),
     };
   } finally {

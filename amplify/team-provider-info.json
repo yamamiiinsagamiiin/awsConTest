@@ -19,7 +19,7 @@
           "dbPassword": "YamaCity1211",
           "dbName": "test_db",
           "deploymentBucketName": "amplify-awscontest-dev-80976-deployment",
-          "s3Key": "amplify-builds/awsconteste3308e42-796b566d4e38586e4871-build.zip"
+          "s3Key": "amplify-builds/awsconteste3308e42-5668336f764a78504176-build.zip"
         }
       },
       "api": {
