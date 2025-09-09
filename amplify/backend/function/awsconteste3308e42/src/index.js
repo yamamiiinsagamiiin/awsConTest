@@ -24,7 +24,7 @@ exports.handler = async (event) => {
       statusCode: 200,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*", // 👈 追加
+        "Access-Control-Allow-Origin": "*", // 追加
       },
       body: JSON.stringify(rows[0] || {}),
     };
@@ -35,7 +35,7 @@ exports.handler = async (event) => {
       statusCode: 500,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*", // 👈 追加
+        "Access-Control-Allow-Origin": "*", // 追加
       },
       body: JSON.stringify({ error: err.message }),
     };
